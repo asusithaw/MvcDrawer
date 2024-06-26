@@ -1,0 +1,95 @@
+﻿@model MvcDrawer.ViewModels.DrawerViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lottery Drawer</h2>
+
+@using (Html.BeginForm("Result", "Drawer", FormMethod.Post))
+{    
+    <div>
+        <label>Winning Letter:</label>
+        @Html.TextBoxFor(m => m.WinningLetter)
+    </div>
+    <div>
+        <label>Winning Number One:</label>
+        @Html.TextBoxFor(m => m.WinningNumberOne)
+    </div>
+    <div>
+        <label>Winning Number Two:</label>
+        @Html.TextBoxFor(m => m.WinningNumberTwo)
+    </div>
+    <div>
+        <label>Winning Number Three:</label>
+        @Html.TextBoxFor(m => m.WinningNumberThree)
+    </div>
+    <div>
+        <label>Winning Number Four:</label>
+        @Html.TextBoxFor(m => m.WinningNumberFour)
+    </div>
+    <div>
+        <label>Second Chance Winning Number One:</label>
+        @Html.TextBoxFor(m => m.WinningSecondChanceNumberOne)
+    </div>
+    <div>
+        <label>Second Chance Winning Number Two:</label>
+        @Html.TextBoxFor(m => m.WinningSecondChanceNumberTwo)
+    </div>
+    <div>
+        <label>Second Chance Winning Number Three:</label>
+        @Html.TextBoxFor(m => m.WinningSecondChanceNumberThree)
+    </div>
+    <div>
+        <label>Second Chance Winning Number Four:</label>
+        @Html.TextBoxFor(m => m.WinningSecondChanceNumberFour)
+    </div>
+    <div>
+        <label>Second Chance Winning Number Five:</label>
+        @Html.TextBoxFor(m => m.WinningSecondChanceNumberFive)
+    </div>
+    <div>
+        <label>Checking Letter:</label>
+        @Html.TextBoxFor(m => m.CheckingLetter)
+    </div>
+    <div>
+        <label>Checking Number One:</label>
+        @Html.TextBoxFor(m => m.CheckingNumberOne)
+    </div>
+    <div>
+        <label>Checking Number Two:</label>
+        @Html.TextBoxFor(m => m.CheckingNumberTwo)
+    </div>
+    <div>
+        <label>Checking Number Three:</label>
+        @Html.TextBoxFor(m => m.CheckingNumberThree)
+    </div>
+    <div>
+        <label>Checking Number Four:</label>
+        @Html.TextBoxFor(m => m.CheckingNumberFour)
+    </div>
+    <div>
+        <label>Second Chance Checking Number One:</label>
+        @Html.TextBoxFor(m => m.CheckingSecondChanceNumberOne)
+    </div>
+    <div>
+        <label>Second Chance Checking Number Two:</label>
+        @Html.TextBoxFor(m => m.CheckingSecondChanceNumberTwo)
+    </div>
+    <div>
+        <label>Second Chance Checking Number Three:</label>
+        @Html.TextBoxFor(m => m.CheckingSecondChanceNumberThree)
+    </div>
+    <div>
+        <label>Second Chance Checking Number Four:</label>
+        @Html.TextBoxFor(m => m.CheckingSecondChanceNumberFour)
+    </div>
+    <div>
+        <label>Second Chance Checking Number Five:</label>
+        @Html.TextBoxFor(m => m.CheckingSecondChanceNumberFive)
+    </div>
+    <div>
+       Result: @ViewBag.Result
+    </div>
+    <button type="submit">Check</button>
+}
